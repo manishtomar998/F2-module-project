@@ -1,0 +1,13 @@
+img{
+    height: 200px;
+    width: 200px;
+}
+#btn{
+    display: none;
+}
+#badLuck{
+    display: none;
+}
+#chance{
+    display: none;
+}

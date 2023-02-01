@@ -1,20 +1,21 @@
 <html>
-    <head>
-        <title>
-            Register
-        </title>
-        <link rel="stylesheet" href="../css/regStyle.css">
-    </head>
-    <body>
-        <form>
-            <div>
-                <label for="name">Name:</label><input type="text" id="name" required>
-                <label for="email">Email:</label><input type="email" id="email" required>
-                <label for="userName">UserName:</label><input type="text" id="userName" required>
-                <button type="submit" id="btn" onclick="submitDetails(event)">Submit</button>
-                <a href="../index.html">Back</a>
-            </div>
-        </form>
-        <script src="../javaScript/regScript.js"></script>
-    </body>
+
+<head>
+    <title>
+        Register
+    </title>
+    <link rel="stylesheet" href="../css/regStyle.css">
+</head>
+
+<body>
+    <div>
+        <label for="name">Name:</label><input type="text" id="name" required>
+        <label for="email">Email:</label><input type="email" id="email" required>
+        <label for="userName">UserName:</label><input type="text" id="userName" required>
+        <button type="submit" id="btn" onclick="submitDetails(event)">Submit</button>
+        <a id="backBtn" href="../index.html">Back</a>
+    </div>
+    <script src="../javaScript/regScript.js"></script>
+</body>
+
 </html>

@@ -1,5 +1,27 @@
 function dataCheck(){
-    if(!(localStorage.getItem("Name") && localStorage.getItem("Username"))){
+    if(localStorage.getItem("firstImageClick")){
+        document.getElementById("firstPicture").style.pointerEvents="none";
+        document.getElementById("secondPicture").style.pointerEvents="visible"; 
+        document.getElementById("thirdPicture").style.pointerEvents="none";
+        document.getElementById("forthPicture").style.pointerEvents="none";          
+    }
+    if((localStorage.getItem("secondImageClick"))){
         document.getElementById("secondPicture").style.pointerEvents="none";
+        document.getElementById("thirdPicture").style.pointerEvents="visible";
+    }
+    if(localStorage.getItem("thirdButtonClick")){
+        document.getElementById("thirdPicture").style.pointerEvents="none";
+        document.getElementById("forthPicture").style.pointerEvents="visible";
+    }
+    if(!localStorage.getItem("firstImageClick")){
+        document.getElementById("thirdPicture").style.pointerEvents="none";
+        document.getElementById("secondPicture").style.pointerEvents="none";
+        document.getElementById("forthPicture").style.pointerEvents="none";
+    }
+    if(localStorage.getItem("status")=="failure"){
+        document.getElementById("firstPicture").style.pointerEvents="none";
+        document.getElementById("secondPicture").style.pointerEvents="none"; 
+        document.getElementById("thirdPicture").style.pointerEvents="none";
+        document.getElementById("forthPicture").style.pointerEvents="none"; 
     }
 }

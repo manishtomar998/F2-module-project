@@ -1,12 +1,19 @@
-function submitDetails(event){
+function submitDetails(event) {
     event.preventDefault();
-    let name=document.getElementById("name").value;
-    //let email=document.getElementById("email").value;
-    let userName=document.getElementById("userName").value;
+    let name = document.getElementById("name").value;
+    let userName = document.getElementById("userName").value;
 
-    localStorage.setItem("Name",name);
-    localStorage.setItem("Username",userName);
-    document.querySelector("#name").value="";
-    document.querySelector("#email").value="";
-    document.querySelector("#userName").value="";
-}
+    document.querySelector("#name").value = "";
+    document.querySelector("#email").value = "";
+    document.querySelector("#userName").value = "";
+    console.log(name, userName);
+    if (name === "" || userName === "") {
+        window.alert("Please enter all details!");
+    }
+    else {
+        localStorage.setItem("firstImageClick", true);
+        document.getElementById("backBtn").style.display = "block";
+        localStorage.setItem("Name", name);
+        localStorage.setItem("Username", userName);
+    }
+} 
