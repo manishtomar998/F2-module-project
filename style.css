@@ -1,0 +1,15 @@
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+img{
+    height: 400px;
+    width: 280px;
+}
+#thirdPicture{
+    /* pointer-events: none; */
+}
+#forthPicture{
+    pointer-events: none;
+}
